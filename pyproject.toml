@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fastapi-log"
+version = "0.1.0"
+description = "log utility for fastapi"
+authors = ["Minsoo <als95.dev@gmail.com>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{include = "fastapi_log"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
