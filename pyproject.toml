@@ -11,9 +11,11 @@ packages = [{include = "fastapi_log"}]
 python = "^3.9"
 pytest = "^7.4.0"
 taskipy = "^1.12.0"
+pylint = "^2.17.5"
 
 [tool.taskipy.tasks]
 test = "python3 -m pytest tests"
+lint = "pylint --rcfile=.pylintrc --disable=R fastapi_log"
 
 [build-system]
 requires = ["poetry-core"]
